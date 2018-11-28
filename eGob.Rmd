@@ -1,0 +1,7 @@
+```{r}
+folder='data'
+fileName='dataMuniFinal.csv'
+fileToRead=file.path(folder,fileName)
+ide12=read.csv(fileToRead,strip.white = T)
+```
+
