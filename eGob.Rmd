@@ -2,6 +2,18 @@
 folder='data'
 fileName='dataMuniFinal.csv'
 fileToRead=file.path(folder,fileName)
-ide12=read.csv(fileToRead,strip.white = T)
+dataMuni=read.csv(fileToRead,strip.white = T)
+```
+
+```{r}
+names(dataMuni)
+```
+
+```{r}
+dataMuni = dataMuni[,-c(1,6)]
+```
+
+```{r}
+dataMuni$develop = dataMuni$Informacion+dataMuni$Servicios+dataMuni$Participacion
 ```
 
